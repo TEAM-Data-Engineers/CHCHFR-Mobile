@@ -1,0 +1,990 @@
+{
+    "html_attributions": [],
+    "next_page_token": "ATplDJZ-puJfynU4zlJwbefo1hXuUlSdV3KCyGxZhc9CqEpIPGB4dENHwroB4ush8XqoUBhP0HBpjYoQ0SpNPJCegSctQiB4YzeMn2Ads9eI2Kb6TUlazUFWU6Gqt8L8V-5qUN2Chzk3EHwMFtzd2aw73_-7NBjthq-g881r0cu5PXifNwD6YlaStDlmyLNeLSCWwnJ7-NhC5Bo7GDe6fdRwZmw4Q11H3pRct1yXqAobYuhOfzWdW-zSYt-3pNWDnDxW3OjzRrFxF2-3QF8Vq46uQs6C4WC4HA21-F4HP54kZzNpD9waQJbgy3x9QL4_ycd8hWvMRuvkyzLAfM30nGmMZdKEHWYoLjOWrgaXEmOEAuGbzIHxrqYfUBmNVAILGbw3DpRUV-aJyC_tyPNuNoPlAbvqUtB1fZAL2auPcfr_j9I3hLiB314wmoSGPw",
+    "results": [
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.5404794,
+                    "lng": 172.622199
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.5391272197085,
+                        "lng": 172.6234505802915
+                    },
+                    "southwest": {
+                        "lat": -43.5418251802915,
+                        "lng": 172.6207526197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "Z - Moorhouse - Service Station",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/109446191583835613973\">Fiona Edge</a>"
+                    ],
+                    "photo_reference": "ATplDJaVRjq9N0BR41I7f3zTX8xDxpTFxIt035dgND545UslSmVzR_zKo6kLl-TxxfnKns6mpQWNW9TTJMPfnei6cHjy0fIfn9d0Rx3QhBw-eC1qPoftcYU4ODSW1PwAgOGxDk1zzGCf7r9GNldU72_4AU0MjL2acp2FECmFllE0GeSCx1qB",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJhW4GO2yKMW0REO6mFT1WvZ8",
+            "plus_code": {
+                "compound_code": "FJ5C+RV Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JFJ5C+RV"
+            },
+            "rating": 4.2,
+            "reference": "ChIJhW4GO2yKMW0REO6mFT1WvZ8",
+            "scope": "GOOGLE",
+            "types": [
+                "gas_station",
+                "convenience_store",
+                "car_wash",
+                "food",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 382,
+            "vicinity": "40 Moorhouse Avenue, Addington, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.5046503,
+                    "lng": 172.6020718
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.5033372697085,
+                        "lng": 172.6035659302915
+                    },
+                    "southwest": {
+                        "lat": -43.50603523029149,
+                        "lng": 172.6008679697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "Challenge",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/109269679999214179591\">Mushtaq Parker</a>"
+                    ],
+                    "photo_reference": "ATplDJaGtH6AWt-aC6sCOXJPsNGP1XAPFBBa1ehhEOIqvFhMEj0-mOqeRjixUkZEeidMEn9c6wJ8ZHWTXd1g9XJ36Wri9eP1mCvLtO1RO-WyNLR7eJKGBrVLm-Mb17xw35Muh6A2mWrW4lSEM8V-mtGNDYn6G0GNiXI9pxoLiFoxbTr30_d4",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJm_wTOAaLMW0Rf51Lo_3mLRQ",
+            "plus_code": {
+                "compound_code": "FJW2+4R Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JFJW2+4R"
+            },
+            "rating": 4.4,
+            "reference": "ChIJm_wTOAaLMW0Rf51Lo_3mLRQ",
+            "scope": "GOOGLE",
+            "types": ["gas_station", "point_of_interest", "establishment"],
+            "user_ratings_total": 118,
+            "vicinity": "52 Blighs Road, Strowan, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.4995554,
+                    "lng": 172.6098986
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.49815806970851,
+                        "lng": 172.6113488802915
+                    },
+                    "southwest": {
+                        "lat": -43.50085603029151,
+                        "lng": 172.6086509197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "BP",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/115201529116054670334\">Washtec Softcare Juno Guy</a>"
+                    ],
+                    "photo_reference": "ATplDJbgIEj7AtL6TErUBlF6go9igUULciDlGkDBMkndh_mzq82UnF7tAYG0D5IoSJTDcBuWRnPhd3zhCupZrfx-ca4rdml-0nb0itnnQIQ79JV1t6FUk976owCnmx0E3-Br45BuuQGljSYM-dHfQZ84cnXLY-fwgaPp_tAWhYynhHlI7iZB",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJ6UWksqaLMW0Rr3v1gCJEkpg",
+            "plus_code": {
+                "compound_code": "GJ25+5X Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JGJ25+5X"
+            },
+            "rating": 4.1,
+            "reference": "ChIJ6UWksqaLMW0Rr3v1gCJEkpg",
+            "scope": "GOOGLE",
+            "types": ["gas_station", "point_of_interest", "establishment"],
+            "user_ratings_total": 177,
+            "vicinity": "461 Papanui Road, Papanui, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.55019350000001,
+                    "lng": 172.6372423
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.5489495197085,
+                        "lng": 172.6386098302915
+                    },
+                    "southwest": {
+                        "lat": -43.5516474802915,
+                        "lng": 172.6359118697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "Mobil Sydenham",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3120,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/107998996209744011061\">Jobin Johns</a>"
+                    ],
+                    "photo_reference": "ATplDJa62Dwt8wANZDL8KDUbxJ7IKi1cpmi4OCDYqLePudk4FtMPmj9Fk-b84bnhvyBGQioMZBjXMjp8rMDeDDzHShBkGWWBdnrt1kCe-sAAij3_6a-Ak0bkaYqysrOf5CoJvck0QkUHbDi1npji__TwS2eaw5d7_T_9Im6VdGMxHX6iWog",
+                    "width": 4160
+                }
+            ],
+            "place_id": "ChIJ6yU7pgiKMW0R2qn70QPi4vk",
+            "plus_code": {
+                "compound_code": "CJXP+WV Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JCJXP+WV"
+            },
+            "rating": 3.9,
+            "reference": "ChIJ6yU7pgiKMW0R2qn70QPi4vk",
+            "scope": "GOOGLE",
+            "types": ["gas_station", "point_of_interest", "establishment"],
+            "user_ratings_total": 213,
+            "vicinity": "290 Colombo Street, Sydenham, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.5433628,
+                    "lng": 172.667741
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.54208636970849,
+                        "lng": 172.6690374302915
+                    },
+                    "southwest": {
+                        "lat": -43.54478433029149,
+                        "lng": 172.6663394697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "Z - Woolston - Service Station",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3120,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/107998996209744011061\">Jobin Johns</a>"
+                    ],
+                    "photo_reference": "ATplDJYaattraXH0ExVIBobrPoyqoSTsDiWHXG6RyicSu3ZXqg_dCkt961Kj-3KgCzU1acKks1m1Y5pkzxszvRbK7na43U2uinFmtLdlFcNKFIoS9D2y1rcAPNthLjxJAwf9qLW9Jce_vOTI59tA5saQFEDId72ljJ910fM09t0PvqYogdU",
+                    "width": 4160
+                }
+            ],
+            "place_id": "ChIJuTdzpemJMW0RGe8ICdFEpj4",
+            "plus_code": {
+                "compound_code": "FM49+M3 Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JFM49+M3"
+            },
+            "rating": 4.1,
+            "reference": "ChIJuTdzpemJMW0RGe8ICdFEpj4",
+            "scope": "GOOGLE",
+            "types": ["gas_station", "convenience_store", "food", "point_of_interest", "store", "establishment"],
+            "user_ratings_total": 207,
+            "vicinity": "417 Ferry Road, Woolston, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.5130317,
+                    "lng": 172.6376459
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.5116395197085,
+                        "lng": 172.6390118302915
+                    },
+                    "southwest": {
+                        "lat": -43.5143374802915,
+                        "lng": 172.6363138697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "bp",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/101813768268555159050\">02 INFINAT</a>"
+                    ],
+                    "photo_reference": "ATplDJZMqSMgBC_n_AbB9ABe2OfeBoqKOLRgm7ZlB1DKDLOnT2VnyVyTYCnwbpL4IiUUl_wWLdGvhGJEX16_eM1h-2iezK8c_wlpIFpSVWVeQM-2Fxivjqdifv86zdo0ZOjH9oO_BmfmyK_Q0UWfLfpogdW5Y91QbR80p2OfkAaSoIfj3KXY",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJq2FYgdKLMW0RTJRlY6Hi5uo",
+            "plus_code": {
+                "compound_code": "FJPQ+Q3 Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JFJPQ+Q3"
+            },
+            "rating": 3.3,
+            "reference": "ChIJq2FYgdKLMW0RTJRlY6Hi5uo",
+            "scope": "GOOGLE",
+            "types": [
+                "gas_station",
+                "atm",
+                "cafe",
+                "car_wash",
+                "finance",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 66,
+            "vicinity": "Edgeware Road, Saint Albans, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.5395224,
+                    "lng": 172.6392333
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.5382298197085,
+                        "lng": 172.6405803802915
+                    },
+                    "southwest": {
+                        "lat": -43.5409277802915,
+                        "lng": 172.6378824197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "PaKnSave Fuel",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3840,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/104432998641103431264\">Pratik Singh Solanki</a>"
+                    ],
+                    "photo_reference": "ATplDJZO3K9McwBzEalMil7WZNOJcKcOM2RT4eah2BSa8NdDD3JCSSpIflyVB44PbvMIKSZ0OFakvn8rfaFtCsnqF12jl930WkMIl-cZGs8HFOV4K9gYXjQBrwSpIpskrX50GNPbu2nDhtSGTY12u7e9rT_H8Q1x_lsW9MbtTERXRbBO0pZk",
+                    "width": 5120
+                }
+            ],
+            "place_id": "ChIJCad7iRmKMW0ReYKucLNEDDw",
+            "plus_code": {
+                "compound_code": "FJ6Q+5M Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JFJ6Q+5M"
+            },
+            "rating": 4.3,
+            "reference": "ChIJCad7iRmKMW0ReYKucLNEDDw",
+            "scope": "GOOGLE",
+            "types": ["gas_station", "point_of_interest", "establishment"],
+            "user_ratings_total": 67,
+            "vicinity": "297 Moorhouse Avenue, Sydenham, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.52553,
+                    "lng": 172.6733325
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.5241829197085,
+                        "lng": 172.6747301802915
+                    },
+                    "southwest": {
+                        "lat": -43.5268808802915,
+                        "lng": 172.6720322197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "bp",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/103889436637979382590\">George Anderson</a>"
+                    ],
+                    "photo_reference": "ATplDJZFsB76zAyVVNA8dZ9BjdoCotLElttyHRRryapgzWEn8J-LcoYQ1EMDJDiJPT2Pm4VWtYOulHYM_1BP8KMNmqC1VbMc8Fqas1epyaplhulAETfFOSJkvJVTm5349LYM4COtJwOPbeKaF_0BeJoI9FDWYM8K6wbuQpZJNJ7fa3vQT7eB",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJS7IcBqOJMW0RwWAXkLLQ8NQ",
+            "plus_code": {
+                "compound_code": "FMFF+Q8 Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JFMFF+Q8"
+            },
+            "rating": 3.8,
+            "reference": "ChIJS7IcBqOJMW0RwWAXkLLQ8NQ",
+            "scope": "GOOGLE",
+            "types": [
+                "gas_station",
+                "atm",
+                "cafe",
+                "car_wash",
+                "finance",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 230,
+            "vicinity": "712 Gloucester Street, Linwood east, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.52930479999999,
+                    "lng": 172.608972
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.5278295697085,
+                        "lng": 172.6103020302915
+                    },
+                    "southwest": {
+                        "lat": -43.5305275302915,
+                        "lng": 172.6076040697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "Mobil Riccarton",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 699,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/104577045232639160972\">Mobil Riccarton</a>"
+                    ],
+                    "photo_reference": "ATplDJZAsjgOua3TNKqXPbUAvVpPM49euBu8ND3kt1fCCLKWxwPQE1BrgsAq6JlIBSCjQfM5omDBHyBS33NRwVxD9MX7-6Dt6BVDEEvHGtsUcUvWn6Nax2nFmilLeyFlamTOb2dUE9QQNblPzdCUOq9juVI6h0T5LUUH_1bk6yKWoEDheVRi",
+                    "width": 1240
+                }
+            ],
+            "place_id": "ChIJp94UwF6KMW0RDjM-3_z7fMU",
+            "plus_code": {
+                "compound_code": "FJC5+7H Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JFJC5+7H"
+            },
+            "rating": 4,
+            "reference": "ChIJp94UwF6KMW0RDjM-3_z7fMU",
+            "scope": "GOOGLE",
+            "types": ["gas_station", "point_of_interest", "establishment"],
+            "user_ratings_total": 129,
+            "vicinity": "33 Riccarton Road, Riccarton, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.5458562,
+                    "lng": 172.6085853
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.5444144197085,
+                        "lng": 172.6098313302915
+                    },
+                    "southwest": {
+                        "lat": -43.5471123802915,
+                        "lng": 172.6071333697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "Z - Addington - Service Station",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1800,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/116532221427477083835\">Abhijeet Kale</a>"
+                    ],
+                    "photo_reference": "ATplDJZuJa57Q-wrIF4gYDyFCos-n4fK3A7mUXcBbdsb7xAkfLI2eLOoTEJVh1v_-5l3J0DFqJV4317F0SvuQUKVMEdnm1HVgrKglsLTdrlWpbxMfhZwUhE-8jBnNK-_3hKkZDcWR9AYE9irkq97QIb0qYqeOJgGYmoNcDPjMIEC25Hj2Un9",
+                    "width": 4000
+                }
+            ],
+            "place_id": "ChIJAeTzRnyKMW0R_18aNTYfQp8",
+            "plus_code": {
+                "compound_code": "FJ35+MC Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JFJ35+MC"
+            },
+            "rating": 4,
+            "reference": "ChIJAeTzRnyKMW0R_18aNTYfQp8",
+            "scope": "GOOGLE",
+            "types": [
+                "gas_station",
+                "convenience_store",
+                "car_wash",
+                "food",
+                "point_of_interest",
+                "store",
+                "establishment"
+            ],
+            "user_ratings_total": 243,
+            "vicinity": "250 Lincoln Road, Addington, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.5471,
+                    "lng": 172.6797
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.5459040697085,
+                        "lng": 172.6808904302915
+                    },
+                    "southwest": {
+                        "lat": -43.5486020302915,
+                        "lng": 172.6781924697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "Waitomo Woolston",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/104467109746765622332\">Kym Zelton</a>"
+                    ],
+                    "photo_reference": "ATplDJatpCWYZN1CfFuCiioAI0jd9qfnzdPN_ra7LwtCcYZZTGG-WHlNpiMp2kbK3KzFAgzfeVf8apEpYZUicCXdq2l0fjMYYS8UtMr2MlwyBVonSXOrzH17WRTavltGbCaZHLktpNY-jqTyg0KpoF_kgueAEsztjDf5Ag5NrEJBNs6mKZ2o",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJyYmctNqJMW0RHQcNNs7eAfc",
+            "plus_code": {
+                "compound_code": "FM3H+5V Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JFM3H+5V"
+            },
+            "rating": 4.1,
+            "reference": "ChIJyYmctNqJMW0RHQcNNs7eAfc",
+            "scope": "GOOGLE",
+            "types": ["gas_station", "point_of_interest", "establishment"],
+            "user_ratings_total": 131,
+            "vicinity": "619 Ferry Road, Woolston, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.518716,
+                    "lng": 172.5898145
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.51741216970849,
+                        "lng": 172.5910873802915
+                    },
+                    "southwest": {
+                        "lat": -43.52011013029149,
+                        "lng": 172.5883894197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "bp",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 2268,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/115310328088457618605\">Shawn Kim</a>"
+                    ],
+                    "photo_reference": "ATplDJZBCwcERJycuycYmuKQmrcMCbiAIXdxdhk3ydBx2_GrxlFB3OaCK1ItYeXwoPjREbciRbKoiP7YAA00sD9oZDqWEoq4TZYvf6zh_JztuTx88STiVJW_NlpA3nrLSjo_kE_2cV7u9QFSF4XeM_CCP1dV7n2tBevQt0D85e6FPIehHFH_",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJAwoKPuSKMW0R1r0YsaJzy4s",
+            "plus_code": {
+                "compound_code": "FHJQ+GW Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JFHJQ+GW"
+            },
+            "rating": 3.8,
+            "reference": "ChIJAwoKPuSKMW0R1r0YsaJzy4s",
+            "scope": "GOOGLE",
+            "types": [
+                "gas_station",
+                "atm",
+                "cafe",
+                "car_wash",
+                "finance",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 68,
+            "vicinity": "1 Memorial Avenue, Ilam, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.5630383,
+                    "lng": 172.6577263
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.5616190697085,
+                        "lng": 172.6591779302915
+                    },
+                    "southwest": {
+                        "lat": -43.5643170302915,
+                        "lng": 172.6564799697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "MOBIL",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3096,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/117776985807000657410\">Rineet Subramanian</a>"
+                    ],
+                    "photo_reference": "ATplDJYPsNgg0CiiUGwaUhlY2EdIGM7zwpQ5X8rBBeTbDEWci375A0qdDJ9T7Y6yG06U-SKcllU_e9jlR70zkRE328jQMN-k3LrOUtpa7cP7hdYUowKWQzl2K44pqG4jidd-On5_doywDIrYAfyU0oPICRW-5g-t3Z_Rd0fQ7-5Dshm0hQER",
+                    "width": 4128
+                }
+            ],
+            "place_id": "ChIJbb9BQlAnMm0RbaILV3VrkSE",
+            "plus_code": {
+                "compound_code": "CMP5+Q3 Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JCMP5+Q3"
+            },
+            "rating": 4.1,
+            "reference": "ChIJbb9BQlAnMm0RbaILV3VrkSE",
+            "scope": "GOOGLE",
+            "types": ["gas_station", "point_of_interest", "establishment"],
+            "user_ratings_total": 81,
+            "vicinity": "238 Centaurus Road, Saint Martins, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.5183773,
+                    "lng": 172.651896
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.5169648197085,
+                        "lng": 172.6530748302915
+                    },
+                    "southwest": {
+                        "lat": -43.5196627802915,
+                        "lng": 172.6503768697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "Challenge Petrol Station",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 2268,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/114991968318725305861\">Chris Buchanan</a>"
+                    ],
+                    "photo_reference": "ATplDJZKRjRyrAcNkQCHRTV9ug8_XwzOTEkAg3ldB_vZtIhEb5GxBBfRNeCxlQ50cwLCxYT_eteMkTyuBERtLHnghTPgCc5KFI93mn3l86_cRY_vI_MIN0Vw5-efQco5VyfcAYdRhb3vuMiguJE2_Js56BPVt8HPU0qHq8aBz7d7kBtR5vBl",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJ4wh_kX6JMW0RWDCvzB__g3E",
+            "plus_code": {
+                "compound_code": "FMJ2+JQ Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JFMJ2+JQ"
+            },
+            "rating": 4.2,
+            "reference": "ChIJ4wh_kX6JMW0RWDCvzB__g3E",
+            "scope": "GOOGLE",
+            "types": ["gas_station", "point_of_interest", "store", "establishment"],
+            "user_ratings_total": 93,
+            "vicinity": "2 Hills Road, Richmond, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.5560948,
+                    "lng": 172.6779952
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.5548630697085,
+                        "lng": 172.6793185302915
+                    },
+                    "southwest": {
+                        "lat": -43.5575610302915,
+                        "lng": 172.6766205697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "Caltex Diesel Stop",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3000,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/114846674872337797888\">* GibsonS</a>"
+                    ],
+                    "photo_reference": "ATplDJYNHxl5EkolBjE-9LDcoeWKa-XmJrtXQUTBZahVGjVB1IIEGRYPm8GawWCH4T15yLtbfPHdSijDJvlk3mUIge64Uz_ZgqbOYC1p4201fMYhXb3PuSk4UxHZL6YtMPr0sInyO6_-sKxgEfONr2lfPtYSfdcElN2Y8lb7x5r5PvOW9Atj",
+                    "width": 4000
+                }
+            ],
+            "place_id": "ChIJUXkVfdiJMW0RHn5U6YTi-w4",
+            "plus_code": {
+                "compound_code": "CMVH+H5 Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JCMVH+H5"
+            },
+            "rating": 4.1,
+            "reference": "ChIJUXkVfdiJMW0RHn5U6YTi-w4",
+            "scope": "GOOGLE",
+            "types": ["gas_station", "point_of_interest", "establishment"],
+            "user_ratings_total": 18,
+            "vicinity": "30 Garlands Road, Woolston, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.56522690000001,
+                    "lng": 172.6367576
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.56390621970851,
+                        "lng": 172.6382614802914
+                    },
+                    "southwest": {
+                        "lat": -43.56660418029151,
+                        "lng": 172.6355635197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "Z - Cashmere - Service Station",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 2358,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/106795499360185577675\">Navjeet Sharma</a>"
+                    ],
+                    "photo_reference": "ATplDJapj6xYEuUhhNaq2ObDwWXiJSzxclRJyS14XEl89fpPlD6gy6BJeInUOVsA47b9y0h6BsMRgA1dBrLan_Se7pRn5mtrqjs2j-YOEMkP_GOpr6_5kQM1pu4ncdZwqRqLzYi8peCH3GRbqThJ24hLPd08PpET0WQTx0KniR6Kkr9W3Sa0",
+                    "width": 4191
+                }
+            ],
+            "place_id": "ChIJU2hkjrogMm0RclJCEolSG1A",
+            "plus_code": {
+                "compound_code": "CJMP+WP Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JCJMP+WP"
+            },
+            "rating": 4.3,
+            "reference": "ChIJU2hkjrogMm0RclJCEolSG1A",
+            "scope": "GOOGLE",
+            "types": ["gas_station", "convenience_store", "food", "point_of_interest", "store", "establishment"],
+            "user_ratings_total": 134,
+            "vicinity": "23-25 Colombo Street, Cashmere, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.5506843,
+                    "lng": 172.5994639
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.54938921970849,
+                        "lng": 172.6008774802915
+                    },
+                    "southwest": {
+                        "lat": -43.55208718029149,
+                        "lng": 172.5981795197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "NPD Lincoln Road",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 1440,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/106449876015301092823\">Robin Sharma</a>"
+                    ],
+                    "photo_reference": "ATplDJbinA5J_GMjWF4PXJHe0kZ5Jr1YciT3DScCJxfeqNFzl7pW_CR3EiK1CJohB43jynkNI4Fl0qYLnWqBHIFc8j8uj9JTNWQ04pfDbPekKFBItIDPn3En-_8EzfGtPlANAYBgQn68K8kQMnnShoNWLuz23w7tj5f71ESUtVlQYpcdBDnI",
+                    "width": 2560
+                }
+            ],
+            "place_id": "ChIJM71cHIKKMW0Rrvu_dOlboro",
+            "plus_code": {
+                "compound_code": "CHXX+PQ Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JCHXX+PQ"
+            },
+            "rating": 4.5,
+            "reference": "ChIJM71cHIKKMW0Rrvu_dOlboro",
+            "scope": "GOOGLE",
+            "types": ["gas_station", "point_of_interest", "establishment"],
+            "user_ratings_total": 140,
+            "vicinity": "55 Lincoln Road, Spreydon, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.547261,
+                    "lng": 172.6543086
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.5459580697085,
+                        "lng": 172.6555818302915
+                    },
+                    "southwest": {
+                        "lat": -43.5486560302915,
+                        "lng": 172.6528838697085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "Challenge Opawa",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/106654616707312365312\">Tony Keenan</a>"
+                    ],
+                    "photo_reference": "ATplDJaLToqUJ4EHtwX6MZ3oGdDFMOookA5auUMvdjjj1he7VvL5NmdaOBunsuc9LeLNt7sRF5b8CCJ7ac4riYAhWwZ12MDlj-moFV2yR9jrUXARTrD-qtix_PGw4OoY0RdtxWYJeC47bcRbJsxrH9CVu1KytT14SucuUoDb8ED2Agzql0GE",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJ0ZyhOvqJMW0RPXllCxX22kQ",
+            "plus_code": {
+                "compound_code": "FM33+3P Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JFM33+3P"
+            },
+            "rating": 4.3,
+            "reference": "ChIJ0ZyhOvqJMW0RPXllCxX22kQ",
+            "scope": "GOOGLE",
+            "types": ["gas_station", "point_of_interest", "store", "establishment"],
+            "user_ratings_total": 187,
+            "vicinity": "11 Opawa Road, Waltham, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.5175641,
+                    "lng": 172.7015806
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.51612026970851,
+                        "lng": 172.7028985802915
+                    },
+                    "southwest": {
+                        "lat": -43.51881823029151,
+                        "lng": 172.7002006197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "MOBIL ARANUI",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 2250,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/106513401197424215583\">Eric Chia</a>"
+                    ],
+                    "photo_reference": "ATplDJZHd0hJhbcsHWfrBTwiXok9G9_ZS85bafFDAdYSuHnZvS3QexqbWRWVFzfFuTg4oUFrQMdezPtY_I6-CXTNy9fyo_gZREBQ0SvN-BrOlvzzOwjVG2MUToT2hD6z-eREqPLgnaRvwypB5C7Ve1Eof_hiGjSQg3Sn7b7mIhRUvqnF798L",
+                    "width": 4000
+                }
+            ],
+            "place_id": "ChIJhUzwMfiIMW0RgZh8Q__Jc6E",
+            "plus_code": {
+                "compound_code": "FPJ2+XJ Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JFPJ2+XJ"
+            },
+            "rating": 3.8,
+            "reference": "ChIJhUzwMfiIMW0RgZh8Q__Jc6E",
+            "scope": "GOOGLE",
+            "types": ["gas_station", "point_of_interest", "establishment"],
+            "user_ratings_total": 233,
+            "vicinity": "Cnr Breezes Road &, Pages Road, Wainoni, Christchurch"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": -43.541996,
+                    "lng": 172.687535
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": -43.5407176697085,
+                        "lng": 172.6888143802915
+                    },
+                    "southwest": {
+                        "lat": -43.54341563029149,
+                        "lng": 172.6861164197085
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/gas_station-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+            "name": "bp",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 2448,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/100293345617795404004\">Bp Sockburn</a>"
+                    ],
+                    "photo_reference": "ATplDJZ9TzxHUHaDXWvxeXWomnv5VGk3BW52jkiFveIa_qeDb6_6hoIxD55u6EviuTMOptUX1W23V0kLz_dDAdduselDpSmRCaMXsWFjtHzcZ3xqx9PGZm1kOW6Q3ka7pMrqXgVXCc2xHsfjm77L7AXxauakpVnXBITZNrjFrtUg4jAYZj-s",
+                    "width": 3264
+                }
+            ],
+            "place_id": "ChIJO3yMlMuJMW0RrJCfMDua8F0",
+            "plus_code": {
+                "compound_code": "FM5Q+62 Christchurch, Canterbury, New Zealand",
+                "global_code": "4V8JFM5Q+62"
+            },
+            "rating": 3.5,
+            "reference": "ChIJO3yMlMuJMW0RrJCfMDua8F0",
+            "scope": "GOOGLE",
+            "types": ["gas_station", "atm", "cafe", "finance", "food", "point_of_interest", "establishment"],
+            "user_ratings_total": 41,
+            "vicinity": "457 Linwood Avenue, Bromley, Christchurch"
+        }
+    ],
+    "status": "OK"
+}
