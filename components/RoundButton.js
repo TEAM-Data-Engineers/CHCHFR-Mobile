@@ -12,9 +12,9 @@ const RoundButton = ({ title, onPress }) => {
 const styles = StyleSheet.create({
   button: {
     backgroundColor: '#6200ee',
-    borderRadius: 60, // 圆形按钮
-    width: 60,
-    height: 60,
+    borderRadius: 50, // 圆形按钮
+    width: 50,
+    height: 50,
     justifyContent: 'center',
     alignItems: 'center',
     margin: 5,
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   text: {
     color: 'white',
     fontWeight: 'bold',
-    fontSize: 18,
+    fontSize: 16.6666666667,
   },
 });
 

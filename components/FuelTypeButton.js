@@ -37,9 +37,9 @@ const getBackgroundColor = (fuelType, isSelected) => {
 
 const styles = StyleSheet.create({
     fuelTypeButton: {
-        borderRadius: 45,
-        width: 45,
-        height: 45,
+        borderRadius: 40,
+        width: 40,
+        height: 40,
         justifyContent: 'center',
         alignItems: 'center',
         margin: 5,

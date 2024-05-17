@@ -22,11 +22,20 @@ export default function App() {
     const [viewMode, setViewMode] = useState("map");
     const [selectedFuelType, setSelectedFuelType] = useState("Unleaded 91");
     const [lowestPriceStation, setLowestPriceStation] = useState(null);
+    const [currentDate, setCurrentDate] = useState("");
 
     useEffect(() => {
+        const today = new Date();
+        const formattedDate = new Intl.DateTimeFormat("en-NZ", {
+            day: "2-digit",
+            month: "short",
+            year: "numeric",
+        }).format(today);
+        setCurrentDate(formattedDate);
+
         const fetchGasStations = async (latitude, longitude) => {
             try {
-                const url = `http://10.196.27.98:5002/api/v1/gas-stations?latitude=${latitude}&longitude=${longitude}`;
+                const url = `http://172.20.10.3:5002/api/v1/gas-stations?latitude=${latitude}&longitude=${longitude}`;
                 const response = await fetch(url);
                 const data = await response.json();
                 setGasStations(data.gasStations);
@@ -80,7 +89,7 @@ export default function App() {
             }
             let location = await Location.getCurrentPositionAsync({});
             setLocation(location);
-            
+
             // Move map center to current location
             if (mapRef.current) {
                 mapRef.current.animateToRegion(
@@ -101,19 +110,22 @@ export default function App() {
 
     const handleUserLocationChange = (event) => {
         const { coordinate } = event.nativeEvent;
-        setLocation({ coords: coordinate });
 
-        // Move map center to user location
-        if (mapRef.current) {
-            mapRef.current.animateToRegion(
-                {
-                    latitude: coordinate.latitude,
-                    longitude: coordinate.longitude,
-                    latitudeDelta: 0.0922,
-                    longitudeDelta: 0.0421,
-                },
-                1000
-            );
+        if (coordinate) {
+            setLocation({ coords: coordinate });
+
+            // Move map center to user location
+            if (mapRef.current) {
+                mapRef.current.animateToRegion(
+                    {
+                        latitude: coordinate.latitude,
+                        longitude: coordinate.longitude,
+                        latitudeDelta: 0.0922,
+                        longitudeDelta: 0.0421,
+                    },
+                    1000
+                );
+            }
         }
     };
 
@@ -126,6 +138,7 @@ export default function App() {
     };
 
     const sortedGasStations = getSortedGasStations(gasStations, selectedFuelType);
+    const sortedFuelTypes = ["Unleaded 91", "Unleaded 95", "Unleaded 98", "Diesel"];
 
     return (
         <View style={styles.container}>
@@ -166,13 +179,19 @@ export default function App() {
                         >
                             <Callout style={styles.callout}>
                                 <View>
+                                    {station.fuel_types.map((type, i) => {
+                                        if (type === selectedFuelType) {
+                                            return (
+                                                <Text key={i} style={styles.calloutPrice}>
+                                                    {type} - ${station.prices[i].toFixed(2)}
+                                                </Text>
+                                            );
+                                        }
+                                        return null;
+                                    })}
+                                    <Text style={styles.calloutDate}>{currentDate}</Text>
                                     <Text style={styles.calloutTitle}>{station.location_name}</Text>
-                                    {station.fuel_types.map((type, i) => (
-                                        <Text key={i}>
-                                            {type}: ${station.prices[i].toFixed(2)}
-                                        </Text>
-                                    ))}
-                                    <Text>{station.address_line1}</Text>
+                                    <Text style={styles.calloutAddress}>{station.address_line1}</Text>
                                 </View>
                             </Callout>
                         </Marker>
@@ -235,7 +254,7 @@ const styles = StyleSheet.create({
     },
     map: {
         width: "100%",
-        height: "90%",
+        height: "93%",
     },
     list: {
         width: "100%",
@@ -286,13 +305,35 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
     },
     callout: {
-        padding: 8,
-        lineHeight: 24,
+        padding: 3,
         borderRadius: 10,
+        backgroundColor: "#fff",
+        borderColor: "#ddd",
+        borderWidth: 1,
+    },
+    calloutPrice: {
+        fontSize: 20,
+        fontWeight: "bold",
+        color: "#333",
+        marginBottom: 5,
+        lineHeight: 24,
+    },
+    calloutDate: {
+        fontSize: 16,
+        color: "#555",
+        marginBottom: 5,
+        lineHeight: 20,
     },
     calloutTitle: {
-        fontWeight: "bold",
+        fontSize: 14,
+        color: "#333",
         marginBottom: 5,
+        lineHeight: 20,
+    },
+    calloutAddress: {
+        fontSize: 12,
+        color: "#777",
+        lineHeight: 18,
     },
     errorMsg: {
         color: "red",
