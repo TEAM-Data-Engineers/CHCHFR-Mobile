@@ -15,33 +15,33 @@ const Badge = ({ fuelType, price, highlighted }) => {
 };
 
 const getBackgroundColor = (fuelType, isSelected) => {
-    if (isSelected) return '#6200ee'; // 选中时的颜色
+    if (isSelected) return '#6200ee'; 
     switch (fuelType) {
         case 'Diesel':
-            return '#505050'; // 浅黑色
+            return '#505050';
         case 'Unleaded 91':
-            return '#87CEFA'; // 浅蓝色
+            return '#87CEFA'; 
         case 'Unleaded 95':
-            return '#FFD580'; // 浅橙色
+            return '#FFD580'; 
         case 'Unleaded 98':
-            return '#FF7F7F'; // 浅红色
+            return '#FF7F7F'; 
         default:
-            return '#DDD'; // 默认背景色
+            return '#DDD'; 
     }
 };
 
 const getTextColor = (fuelType) => {
     switch (fuelType) {
         case 'Diesel':
-            return '#FFFFFF'; // 白色
+            return '#FFFFFF';
         case 'Unleaded 91':
-            return '#000000'; // 黑色
+            return '#000000'; 
         case 'Unleaded 95':
-            return '#000000'; // 黑色
+            return '#000000'; 
         case 'Unleaded 98':
-            return '#000000'; // 黑色
+            return '#000000'; 
         default:
-            return '#000000'; // 黑色
+            return '#000000'; 
     }
 };
 

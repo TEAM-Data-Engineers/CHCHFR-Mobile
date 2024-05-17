@@ -2,14 +2,21 @@ import * as React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { Card, Title, Paragraph } from "react-native-paper";
 import Badge from "./Badge";
+import { getBackgroundColor } from "../utils/utils";
 
 const FuelCard = ({ station, selectedFuelType, index }) => {
-    const sortedFuelTypes = ['Unleaded 91', 'Unleaded 95', 'Unleaded 98', 'Diesel'];
+    const backgroundColor = getBackgroundColor(selectedFuelType, false);
+    const sortedFuelTypes = ["Unleaded 91", "Unleaded 95", "Unleaded 98", "Diesel"];
 
     return (
         <Card key={index} style={styles.card}>
             <Card.Content>
-                <Title style={styles.title}>{station.location_name}</Title>
+                <View style={styles.titleContainer}>
+                    <Title style={styles.title}>{station.location_name}</Title>
+                    <View style={[styles.indexCircle, { backgroundColor }]}>
+                        <Text style={styles.indexText}>{index + 1}</Text>
+                    </View>
+                </View>
                 <View style={styles.badgeContainer} key={`badgeContainer-${index}`}>
                     {sortedFuelTypes.map((type) => {
                         const i = station.fuel_types.indexOf(type);
@@ -40,12 +47,29 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         elevation: 4,
     },
+    titleContainer: {
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+    },
     title: {
         fontSize: 18,
         fontWeight: "bold",
     },
+    indexCircle: {
+        width: 24,
+        height: 24,
+        borderRadius: 12,
+        backgroundColor: "#6200ee",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    indexText: {
+        color: "#fff",
+        fontWeight: "bold",
+    },
     badgeContainer: {
-        flexDirection: 'row',
+        flexDirection: "row",
         marginVertical: 10,
     },
     address: {

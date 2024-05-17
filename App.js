@@ -6,9 +6,11 @@ import { StyleSheet, View, Text, ScrollView } from "react-native";
 import FuelCard from "./components/FuelCard";
 import RoundButton from "./components/RoundButton";
 import FuelTypeButton from "./components/FuelTypeButton";
+import Constants from 'expo-constants';
 
 export default function App() {
     const mapRef = useRef(null);
+    const apiUrl = Constants.expoConfig?.extra?.apiUrl || "http://default-url";
     const initialLocation = {
         coords: {
             latitude: -43.5235,
@@ -35,42 +37,12 @@ export default function App() {
 
         const fetchGasStations = async (latitude, longitude) => {
             try {
-                const url = `http://172.20.10.3:5002/api/v1/gas-stations?latitude=${latitude}&longitude=${longitude}`;
-                const response = await fetch(url);
+                const response = await fetch(`${apiUrl}?latitude=${latitude}&longitude=${longitude}`);
                 const data = await response.json();
                 setGasStations(data.gasStations);
 
                 // Find the station with the lowest price
-                let minPrice = Infinity;
-                let minPriceStation = null;
-
-                data.gasStations.forEach((station) => {
-                    const price = station.prices[station.fuel_types.indexOf(selectedFuelType)];
-                    if (price < minPrice) {
-                        minPrice = price;
-                        minPriceStation = station;
-                    }
-                });
-
-                setLowestPriceStation(minPriceStation);
-
-                // Automatically show the callout for the lowest price station
-                if (mapRef.current && minPriceStation) {
-                    mapRef.current.animateToRegion(
-                        {
-                            latitude: parseFloat(minPriceStation.latitude),
-                            longitude: parseFloat(minPriceStation.longitude),
-                            latitudeDelta: 0.0922,
-                            longitudeDelta: 0.0421,
-                        },
-                        1000
-                    );
-
-                    // Delay showing the callout to ensure the marker is rendered
-                    setTimeout(() => {
-                        mapRef.current.markerRef.showCallout();
-                    }, 1000);
-                }
+                updateLowestPriceStation(data.gasStations, selectedFuelType);
             } catch (error) {
                 console.error("Error fetching gas stations:", error);
                 setErrorMsg("Failed to fetch gas stations.");
@@ -79,6 +51,46 @@ export default function App() {
 
         fetchGasStations(initialLocation.coords.latitude, initialLocation.coords.longitude);
     }, [selectedFuelType]);
+
+    useEffect(() => {
+        if (viewMode === "map" && lowestPriceStation) {
+            // Delay execution to ensure markerRef is set
+            setTimeout(() => {
+                // Move map center to lowest price station
+                if (mapRef.current) {
+                    mapRef.current.animateToRegion(
+                        {
+                            latitude: parseFloat(lowestPriceStation.latitude),
+                            longitude: parseFloat(lowestPriceStation.longitude),
+                            latitudeDelta: 0.0922,
+                            longitudeDelta: 0.0421,
+                        },
+                        1000
+                    );
+                }
+
+                // Show the callout for the lowest price station
+                if (mapRef.current && mapRef.current.markerRef) {
+                    mapRef.current.markerRef.showCallout();
+                }
+            }, 1000);
+        }
+    }, [viewMode, lowestPriceStation]);
+
+    const updateLowestPriceStation = (stations, fuelType) => {
+        let minPrice = Infinity;
+        let minPriceStation = null;
+
+        stations.forEach((station) => {
+            const price = station.prices[station.fuel_types.indexOf(fuelType)];
+            if (price < minPrice) {
+                minPrice = price;
+                minPriceStation = station;
+            }
+        });
+
+        setLowestPriceStation(minPriceStation);
+    };
 
     const getCurrentLocation = async () => {
         try {
@@ -138,7 +150,11 @@ export default function App() {
     };
 
     const sortedGasStations = getSortedGasStations(gasStations, selectedFuelType);
-    const sortedFuelTypes = ["Unleaded 91", "Unleaded 95", "Unleaded 98", "Diesel"];
+
+    const handleFuelTypeChange = (fuelType) => {
+        setSelectedFuelType(fuelType);
+        updateLowestPriceStation(gasStations, fuelType);
+    };
 
     return (
         <View style={styles.container}>
@@ -199,7 +215,7 @@ export default function App() {
             ) : (
                 <ScrollView style={styles.list}>
                     {sortedGasStations.map((station, index) => (
-                        <FuelCard key={index} station={station} selectedFuelType={selectedFuelType} />
+                        <FuelCard key={index} index={index} station={station} selectedFuelType={selectedFuelType} />
                     ))}
                 </ScrollView>
             )}
@@ -213,29 +229,29 @@ export default function App() {
                         fuelType="Unleaded 91"
                         label="91"
                         selectedFuelType={selectedFuelType}
-                        setSelectedFuelType={setSelectedFuelType}
-                        onPress={() => setSelectedFuelType(selectedFuelType === "Unleaded 91" ? null : "Unleaded 91")}
+                        setSelectedFuelType={handleFuelTypeChange}
+                        onPress={() => handleFuelTypeChange(selectedFuelType === "Unleaded 91" ? null : "Unleaded 91")}
                     />
                     <FuelTypeButton
                         fuelType="Unleaded 95"
                         label="95"
                         selectedFuelType={selectedFuelType}
-                        setSelectedFuelType={setSelectedFuelType}
-                        onPress={() => setSelectedFuelType(selectedFuelType === "Unleaded 95" ? null : "Unleaded 95")}
+                        setSelectedFuelType={handleFuelTypeChange}
+                        onPress={() => handleFuelTypeChange(selectedFuelType === "Unleaded 95" ? null : "Unleaded 95")}
                     />
                     <FuelTypeButton
                         fuelType="Unleaded 98"
                         label="98"
                         selectedFuelType={selectedFuelType}
-                        setSelectedFuelType={setSelectedFuelType}
-                        onPress={() => setSelectedFuelType(selectedFuelType === "Unleaded 98" ? null : "Unleaded 98")}
+                        setSelectedFuelType={handleFuelTypeChange}
+                        onPress={() => handleFuelTypeChange(selectedFuelType === "Unleaded 98" ? null : "Unleaded 98")}
                     />
                     <FuelTypeButton
                         fuelType="Diesel"
                         label="D"
                         selectedFuelType={selectedFuelType}
-                        setSelectedFuelType={setSelectedFuelType}
-                        onPress={() => setSelectedFuelType(selectedFuelType === "Diesel" ? null : "Diesel")}
+                        setSelectedFuelType={handleFuelTypeChange}
+                        onPress={() => handleFuelTypeChange(selectedFuelType === "Diesel" ? null : "Diesel")}
                     />
                 </View>
             </View>
@@ -258,11 +274,11 @@ const styles = StyleSheet.create({
     list: {
         width: "100%",
         flex: 1,
-        padding: 3,
+        padding: 5,
         backgroundColor: "#F8F9FA",
     },
     listItem: {
-        padding: 10,
+        padding: 5,
         marginVertical: 5,
         marginHorizontal: 10,
         borderRadius: 5,
