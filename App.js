@@ -165,7 +165,6 @@ export default function App() {
                     {gasStations.map((station, index) => (
                         <Marker
                             key={`${index}-${selectedFuelType}`}
-                            pinColor={station === lowestPriceStation ? "green" : "red"}
                             coordinate={{
                                 latitude: parseFloat(station.latitude),
                                 longitude: parseFloat(station.longitude),
