@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import MapView, { Marker, Callout } from "react-native-maps";
 import * as Location from "expo-location";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View, Text, Button, ScrollView, TouchableOpacity } from "react-native";
+import { StyleSheet, View, Text, ScrollView } from "react-native";
 import FuelCard from "./components/FuelCard";
 import RoundButton from "./components/RoundButton";
 import FuelTypeButton from "./components/FuelTypeButton";
@@ -26,7 +26,7 @@ export default function App() {
     useEffect(() => {
         const fetchGasStations = async (latitude, longitude) => {
             try {
-                const url = `http://10.196.27.98:5002/api/v1/gas-stations?latitude=${-43.5235}&longitude=${172.5836}`;
+                const url = `http://10.196.27.98:5002/api/v1/gas-stations?latitude=${latitude}&longitude=${longitude}`;
                 const response = await fetch(url);
                 const data = await response.json();
                 setGasStations(data.gasStations);
@@ -68,45 +68,54 @@ export default function App() {
             }
         };
 
-        const getCurrentLocation = async () => {
-            try {
-                let { status } = await Location.requestForegroundPermissionsAsync();
-                if (status !== "granted") {
-                    setErrorMsg("Permission to access location was denied");
-                    fetchGasStations(initialLocation.coords.latitude, initialLocation.coords.longitude);
-                    return;
-                }
-                let location = await Location.getCurrentPositionAsync({});
-                setLocation(location);
-                fetchGasStations(location.coords.latitude, location.coords.longitude);
-
-                // Move map center to initial location after loading current location
-                if (mapRef.current) {
-                    mapRef.current.animateToRegion(
-                        {
-                            latitude: initialLocation.coords.latitude,
-                            longitude: initialLocation.coords.longitude,
-                            latitudeDelta: 0.0922,
-                            longitudeDelta: 0.0421,
-                        },
-                        1000
-                    );
-                }
-            } catch (error) {
-                console.log(error);
-                setErrorMsg("Failed to get current location. Using default location.");
-                fetchGasStations(initialLocation.coords.latitude, initialLocation.coords.longitude);
-            }
-        };
-
-        getCurrentLocation();
-
-        return () => {
-            if (mapRef.current && mapRef.current.markerRef) {
-                mapRef.current.markerRef.hideCallout();
-            }
-        };
+        fetchGasStations(initialLocation.coords.latitude, initialLocation.coords.longitude);
     }, [selectedFuelType]);
+
+    const getCurrentLocation = async () => {
+        try {
+            let { status } = await Location.requestForegroundPermissionsAsync();
+            if (status !== "granted") {
+                setErrorMsg("Permission to access location was denied");
+                return;
+            }
+            let location = await Location.getCurrentPositionAsync({});
+            setLocation(location);
+            
+            // Move map center to current location
+            if (mapRef.current) {
+                mapRef.current.animateToRegion(
+                    {
+                        latitude: location.coords.latitude,
+                        longitude: location.coords.longitude,
+                        latitudeDelta: 0.0922,
+                        longitudeDelta: 0.0421,
+                    },
+                    1000
+                );
+            }
+        } catch (error) {
+            console.log(error);
+            setErrorMsg("Failed to get current location.");
+        }
+    };
+
+    const handleUserLocationChange = (event) => {
+        const { coordinate } = event.nativeEvent;
+        setLocation({ coords: coordinate });
+
+        // Move map center to user location
+        if (mapRef.current) {
+            mapRef.current.animateToRegion(
+                {
+                    latitude: coordinate.latitude,
+                    longitude: coordinate.longitude,
+                    latitudeDelta: 0.0922,
+                    longitudeDelta: 0.0421,
+                },
+                1000
+            );
+        }
+    };
 
     const getSortedGasStations = (stations, fuelType) => {
         return [...stations].sort((a, b) => {
@@ -133,11 +142,12 @@ export default function App() {
                     zoomEnabled={true}
                     style={styles.map}
                     initialRegion={{
-                        latitude: location ? location.coords.latitude : initialLocation.coords.latitude,
-                        longitude: location ? location.coords.longitude : initialLocation.coords.longitude,
+                        latitude: initialLocation.coords.latitude,
+                        longitude: initialLocation.coords.longitude,
                         latitudeDelta: 0.0922,
                         longitudeDelta: 0.0421,
                     }}
+                    onUserLocationChange={handleUserLocationChange}
                 >
                     {gasStations.map((station, index) => (
                         <Marker
