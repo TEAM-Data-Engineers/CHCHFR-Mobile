@@ -8,6 +8,7 @@ import RoundButton from "./components/RoundButton";
 import FuelTypeButton from "./components/FuelTypeButton";
 import Constants from 'expo-constants';
 import { formatPrice } from "./utils/utils";
+import { log } from './utils/logger';
 
 export default function App() {
     const mapRef = useRef(null);
@@ -39,15 +40,17 @@ export default function App() {
         const fetchGasStations = async (latitude, longitude) => {
             try {
                 const response = await fetch(`${apiUrl}?latitude=${latitude}&longitude=${longitude}`);
-                console.log(`${apiUrl}?latitude=${latitude}&longitude=${longitude}`)
+                log(`Fetching gas stations with URL: ${apiUrl}?latitude=${latitude}&longitude=${longitude}`);
                 const data = await response.json();
                 setGasStations(data.gasStations);
+                log(`Fetched gas stations: ${JSON.stringify(data.gasStations)}`);
 
                 // Find the station with the lowest price
                 updateLowestPriceStation(data.gasStations, selectedFuelType);
             } catch (error) {
                 console.error("Error fetching gas stations:", error);
                 setErrorMsg("Failed to fetch gas stations.");
+                log(`Error fetching gas stations: ${error}`);
             }
         };
 
@@ -69,6 +72,7 @@ export default function App() {
                         },
                         1000
                     );
+                    log(`Map centered to lowest price station: ${JSON.stringify(lowestPriceStation)}`);
                 }
 
                 // Show the callout for the lowest price station
@@ -92,6 +96,7 @@ export default function App() {
         });
 
         setLowestPriceStation(minPriceStation);
+        log(`Lowest price station updated: ${JSON.stringify(minPriceStation)}`);
     };
 
     const getCurrentLocation = async () => {
@@ -99,6 +104,7 @@ export default function App() {
             let { status } = await Location.requestForegroundPermissionsAsync();
             if (status !== "granted") {
                 setErrorMsg("Permission to access location was denied");
+                log("Permission to access location was denied");
                 return;
             }
             let location = await Location.getCurrentPositionAsync({});
@@ -116,9 +122,11 @@ export default function App() {
                     1000
                 );
             }
+            log(`Current location obtained: ${JSON.stringify(location.coords)}`);
         } catch (error) {
             console.log(error);
             setErrorMsg("Failed to get current location.");
+            log(`Failed to get current location: ${error}`);
         }
     };
 
@@ -140,15 +148,18 @@ export default function App() {
                     1000
                 );
             }
+            log(`User location changed: ${JSON.stringify(coordinate)}`);
         }
     };
 
     const getSortedGasStations = (stations, fuelType) => {
-        return [...stations].sort((a, b) => {
+        const sortedStations = [...stations].sort((a, b) => {
             const priceA = a.prices[a.fuel_types.indexOf(fuelType)];
             const priceB = b.prices[b.fuel_types.indexOf(fuelType)];
             return priceA - priceB;
         });
+        log(`Sorted gas stations by price for ${fuelType}: ${JSON.stringify(sortedStations)}`);
+        return sortedStations;
     };
 
     const sortedGasStations = getSortedGasStations(gasStations, selectedFuelType);
@@ -156,6 +167,7 @@ export default function App() {
     const handleFuelTypeChange = (fuelType) => {
         setSelectedFuelType(fuelType);
         updateLowestPriceStation(gasStations, fuelType);
+        log(`Fuel type changed to: ${fuelType}`);
     };
 
     return (
