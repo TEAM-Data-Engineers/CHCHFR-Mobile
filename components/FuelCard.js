@@ -3,6 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 import { Card, Title, Paragraph } from "react-native-paper";
 import Badge from "./Badge";
 import { getBackgroundColor } from "../utils/utils";
+import { formatPrice } from "../utils/utils";
 
 const FuelCard = ({ station, selectedFuelType, index }) => {
     const backgroundColor = getBackgroundColor(selectedFuelType, false);
@@ -25,7 +26,7 @@ const FuelCard = ({ station, selectedFuelType, index }) => {
                                 <Badge
                                     key={`${type}-${i}`}
                                     fuelType={type}
-                                    price={station.prices[i]}
+                                    price={formatPrice(station.prices[i])}
                                     highlighted={type === selectedFuelType}
                                 />
                             );

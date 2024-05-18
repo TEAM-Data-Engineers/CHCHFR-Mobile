@@ -8,7 +8,7 @@ const Badge = ({ fuelType, price, highlighted }) => {
                 <Text style={[styles.badgeText, { color: highlighted ? '#FFFFFF' : getTextColor(fuelType) }]}>{fuelType}</Text>
             </View>
             <View style={[styles.badgePrice, { backgroundColor: getBackgroundColor(fuelType, highlighted) }]}>
-                <Text style={[styles.priceText, { color: highlighted ? '#FFFFFF' : getTextColor(fuelType) }]}>${price.toFixed(2)}</Text>
+                <Text style={[styles.priceText, { color: highlighted ? '#FFFFFF' : getTextColor(fuelType) }]}>${price}</Text>
             </View>
         </View>
     );

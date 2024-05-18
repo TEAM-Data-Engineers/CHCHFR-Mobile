@@ -7,10 +7,11 @@ import FuelCard from "./components/FuelCard";
 import RoundButton from "./components/RoundButton";
 import FuelTypeButton from "./components/FuelTypeButton";
 import Constants from 'expo-constants';
+import { formatPrice } from "./utils/utils";
 
 export default function App() {
     const mapRef = useRef(null);
-    const apiUrl = Constants.expoConfig?.extra?.apiUrl || "http://default-url";
+    const apiUrl = Constants.expoConfig?.extra?.apiUrl;
     const initialLocation = {
         coords: {
             latitude: -43.5235,
@@ -38,6 +39,7 @@ export default function App() {
         const fetchGasStations = async (latitude, longitude) => {
             try {
                 const response = await fetch(`${apiUrl}?latitude=${latitude}&longitude=${longitude}`);
+                console.log(`${apiUrl}?latitude=${latitude}&longitude=${longitude}`)
                 const data = await response.json();
                 setGasStations(data.gasStations);
 
@@ -198,7 +200,7 @@ export default function App() {
                                         if (type === selectedFuelType) {
                                             return (
                                                 <Text key={i} style={styles.calloutPrice}>
-                                                    {type} - ${station.prices[i].toFixed(2)}
+                                                    {type} - ${formatPrice(station.prices[i])}
                                                 </Text>
                                             );
                                         }
