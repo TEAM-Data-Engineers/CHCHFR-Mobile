@@ -6,17 +6,18 @@ import { StyleSheet, View, Text, ScrollView } from "react-native";
 import FuelCard from "./components/FuelCard";
 import RoundButton from "./components/RoundButton";
 import FuelTypeButton from "./components/FuelTypeButton";
-import Constants from 'expo-constants';
+import Constants from "expo-constants";
 import { formatPrice } from "./utils/utils";
-import { log } from './utils/logger';
+import { log } from "./utils/logger";
+const gasStationIcon = require("./assets/petrol_station_fuel_maps_location_icon.png");
 
 export default function App() {
     const mapRef = useRef(null);
     const apiUrl = Constants.expoConfig?.extra?.apiUrl;
     const initialLocation = {
         coords: {
-            latitude: -43.5235,
-            longitude: 172.5836,
+            latitude: -43.5236408,
+            longitude: 172.580088
         },
     };
 
@@ -153,6 +154,7 @@ export default function App() {
     };
 
     const getSortedGasStations = (stations, fuelType) => {
+        log(`Stations: ${JSON.stringify(stations)}`);
         const sortedStations = [...stations].sort((a, b) => {
             const priceA = a.prices[a.fuel_types.indexOf(fuelType)];
             const priceB = b.prices[b.fuel_types.indexOf(fuelType)];
@@ -205,6 +207,7 @@ export default function App() {
                                     mapRef.current.markerRef = marker;
                                 }
                             }}
+                            icon={gasStationIcon}
                         >
                             <Callout style={styles.callout}>
                                 <View>
