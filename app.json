@@ -7,7 +7,7 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "extra": {
-      "GOOGLE_MAP_API_KEY": "AIzaSyA5a5e67yUhQ_RWzlETuHyCgVYGMCk_4Fs"
+      "GOOGLE_MAP_API_KEY": "Your_Google_Api_Key"
     },
     "splash": {
       "image": "./assets/splash.png",
